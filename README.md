@@ -119,7 +119,7 @@ The `CLAUDE.md` file is your primary context provider. Claude automatically load
 
 Create `CLAUDE.md` in your project root:
 
-```markdown
+````markdown
 # Project: [Your App Name]
 
 ## Quick Reference
@@ -227,13 +227,13 @@ When starting new features:
 @import docs/PRD.md
 @import docs/ARCHITECTURE.md
 @import docs/ROADMAP.md
-```
+````
 
 ### Nested CLAUDE.md for Feature Directories
 
 Create `.claude/CLAUDE.md` or `Features/[FeatureName]/CLAUDE.md`:
 
-```markdown
+````markdown
 # [Feature Name] Module
 
 ## Purpose
@@ -265,7 +265,7 @@ final class ParentViewModel {
 
 ## Testing
 Run tests: `mcp__xcodebuildmcp__swift_package_test`
-```
+````
 
 ---
 
@@ -356,7 +356,7 @@ docs/
 
 ### Feature Spec Template (`docs/specs/template.md`)
 
-```markdown
+````markdown
 # Feature Specification: [Feature Name]
 
 **Status**: Draft | In Review | Approved | In Progress | Complete
@@ -417,7 +417,7 @@ POST /api/v1/feature
 
 ## Open Questions
 - [ ] Question 1?
-```
+````
 
 ### Task File Template (`docs/tasks/feature-tasks.md`)
 
@@ -1967,27 +1967,27 @@ MyiOSApp/
 │   │   ├── session-start.sh
 │   │   ├── post-swift-edit.sh
 │   │   └── file-protection.sh
-│   ├── settings.json               # Team settings (committed)
-│   └── settings.local.json         # Personal settings (gitignored)
-│   └── settings.sandbox.json       # Sandbox mode template
+│   ├── settings.json                # Team settings (committed)
+│   ├── settings.local.json          # Personal settings (gitignored)
+│   └── settings.sandbox.json        # Sandbox mode template
 ├── .mcp.json                        # MCP server configuration
 ├── CLAUDE.md                        # Main project context
 ├── docs/
-│   ├── PRD.md                      # Product Requirements Document
-│   ├── ARCHITECTURE.md             # Architecture decisions
-│   ├── ROADMAP.md                  # Development roadmap
-│   ├── specs/                      # Feature specifications
+│   ├── PRD.md                       # Product Requirements Document
+│   ├── ARCHITECTURE.md              # Architecture decisions
+│   ├── ROADMAP.md                   # Development roadmap
+│   ├── specs/                       # Feature specifications
 │   │   ├── template.md
 │   │   ├── 001-authentication.md
 │   │   └── 002-dashboard.md
-│   └── tasks/                      # Task breakdowns
+│   └── tasks/                       # Task breakdowns
 │       └── authentication-tasks.md
 ├── MyApp/
 │   ├── App/
 │   │   └── MyAppApp.swift
 │   ├── Features/
 │   │   ├── Authentication/
-│   │   │   ├── CLAUDE.md           # Feature-specific context
+│   │   │   ├── CLAUDE.md            # Feature-specific context
 │   │   │   ├── Views/
 │   │   │   └── ViewModels/
 │   │   └── Dashboard/
@@ -1999,7 +1999,7 @@ MyiOSApp/
 ├── MyAppTests/
 ├── MyAppUITests/
 ├── Package.swift                    # If using SPM
-├── .swiftlint.yml                  # SwiftLint configuration
+├── .swiftlint.yml                   # SwiftLint configuration
 ├── .swift-format                    # Swift-format configuration
 └── .gitignore
 ```
